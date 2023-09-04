@@ -1,0 +1,141 @@
+html{
+    font-family: 'Quicksand', sans-serif;
+    color: #ebebeb;
+    background-color: #1a1a1a;
+}
+
+.bg{
+   /* background-color: #d8d8d8;*/
+   background-color: rgba(71, 70, 70, 0.6);
+}
+
+header{
+    text-align: center;
+    display: flex;          /*By default the flex direction is set to row*/
+    flex-direction: column;    /*By this the flex is set to column*/
+}
+
+header h1{
+    margin: 0;
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+ul{
+    padding: 0;
+}
+
+.bgimg{
+    background: url(1215950.jpg) no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgtxt{
+    text-align: center;
+    font-size: 2em;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.wrapper{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+article {         /*divided the blog posts with space*/
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.sbw{
+    padding: 15px;
+    margin: 15px 0;
+    margin-right: 15px
+}
+
+.sbw h2{
+    margin: 0;
+}
+
+article > header{
+    background: #1a1a1a;
+}
+
+img{
+
+    width: 100%;
+    justify-content: center;
+}
+
+i{
+    margin: 0 5px
+}
+
+a:hover{
+    color:rgb(0, 0, 0) ;
+}
+
+td:nth-child(2){
+    padding-left: 40px;
+}
+
+aside h2{
+    
+    background: #1a1a1a;
+}
+
+@media (min-width: 1280px){
+    body{
+        max-width: 1600px;
+        margin: 0 auto ;
+    }
+
+    header{
+        flex-direction: row; /*content under will be in side by side*/
+    }
+
+    header li{
+        display: inline-block;  /*makes nav locations in row*/
+    }
+
+    header h1, nav{
+        flex: 1;
+    }
+
+    header h1{
+        text-align: left;
+    }
+
+    header nav{
+        text-align: right;
+    }
+    .wrapper{
+        flex-direction: row;
+    }
+
+    main{
+        flex: 3;
+    }
+
+    aside{
+        flex: 1;
+        margin-left: 15px;
+    }
+
+    article > header{
+        justify-content: space-around;
+    }
+}
